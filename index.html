@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cab Service</title>
+    <link rel="icon" type="image/png" href="images/logo.jpeg" />
+
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="images/ecablogo.png" alt="Logo" /></a>
+
+      <ul class="navbar">
+        <li><a href="#details">Reception</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#vehicles">Park</a></li>
+        <li><a href="#drivers">Drivers</a></li>
+        <li><a href="#areas">Areas</a></li>
+        <li><a href="#reviews">Testimonials</a></li>
+        <li><a href="#FAQ">FAQ</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+
+      <div class="header-btn">
+        <a href="#signup" class="sign-up">Sign Up</a>
+        <a href="#signin" class="sign-in">Sign In</a>
+      </div>
+    </header>
+
+    <!------------ANNOUNCEMENT------------------>
+    <div class="news-container">
+      <span>Announcement</span>
+      <marquee behavior="" direction="left"
+        >SPECIAL & LIMITED OFFER -10% ON YOUR FIRST BOOKING</marquee
+      >
+    </div>
+
+    <!---------------------Booking---------------------->
+    <section class="booking">
+      <div class="container">
+        <section class="journey-details" id="details">
+          <h2>BOOK YOU RIDE NOW</h2>
+          <div class="details-row">
+            <label for="service-category">Service Category:</label>
+            <select id="service-category" name="service-category">
+              <option value="truck">One Time</option>
+              <option value="car">Recurrent</option>
+              <option value="minibus">Service</option>
+            </select>
+          </div>
+          <div class="details-row">
+            <label for="pickup-address">Pickup Address:</label>
+            <input
+              type="text"
+              id="pickup-address"
+              name="pickup-address"
+              placeholder="Enter Pickup Address"
+            />
+          </div>
+          <div class="details-row">
+            <label for="dropoff-address">Dropoff Address:</label>
+            <input
+              type="text"
+              id="dropoff-address"
+              name="dropoff-address"
+              placeholder="Enter Dropoff Address"
+            />
+          </div>
+          <div class="details-row">
+            <label for="pickup-date">Pickup Date:</label>
+            <input type="date" id="pickup-date" name="pickup-date" />
+          </div>
+          <div class="details-row">
+            <label for="pickup-time">Pickup Time:</label>
+            <input type="time" id="pickup-time" name="pickup-time" />
+          </div>
+
+          <div class="car-options-container">
+            <div class="car-option">
+              <input type="radio" id="car1" name="car" checked />
+              <label for="car1">
+                <div class="option-content">
+                  <p>Because</p>
+                  <img src="images/car1.png" alt="Car 1" />
+                </div>
+              </label>
+            </div>
+            <div class="car-option">
+              <input type="radio" id="car2" name="car" />
+              <label for="car2">
+                <div class="option-content">
+                  <p>Minibus</p>
+                  <img src="images/car1.png" alt="Car 2" />
+                </div>
+              </label>
+            </div>
+            <div class="car-option">
+              <input type="radio" id="car3" name="car" />
+              <label for="car3">
+                <div class="option-content">
+                  <p>Window</p>
+                  <img src="images/car1.png" alt="Car 3" />
+                </div>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <div class="slider">
+          <div class="flex-container">
+            <div class="slidercontainer">
+              <p class="text">
+                PARATRANSIT FOR PEOPLE WITH REDUCED MOBILITY PEOPLE WITH
+                DISABILITIES AND THE ELDERLY ANY TYPE OF JOURNEY - ANY DISTANCE.
+              </p>
+            </div>
+            <div class="service">
+              <img src="images/chair.png" class="servicetypes" />
+            </div>
+          </div>
+          <div class="threesteps">
+            <img src="images/vehicle.png" class="steps" />
+            <img src="images/driver.png" class="steps" />
+            <img src="images/prices.png" class="steps" />
+          </div>
+          <img src="images/car2.png" class="slide" />
+          <img src="images/car3.png" class="slide" />
+          <img src="images/car4.png" class="slide" />
+        </div>
+      </div>
+      <div class="btn-container">
+        <a href="#identification" class="btn">IDENTIFICATION</a>
+      </div>
+    </section>
+
+    <!----------------------Chat Support------------------------->
+    <img id="moving-image" src="images/chat.gif" alt="Moving Image" />
+
+    <!-------------------Services----------------------------->
+    <section class="services" id="services">
+      <div class="heading">
+        <h1>Our Services</h1>
+      </div>
+
+      <div class="services-container">
+        <div class="box">
+          <h3 class="heading3">PRIVATE TRANSPORTATION</h3>
+          <div class="box-img">
+            <img src="images/servicepic1.jpeg" alt="" />
+          </div>
+          <p>
+            As a worker with a disability, you are legitimately looking for
+            adapted transport to carry out all your business trips.
+          </p>
+          <div class="btn-container">
+            <a href="#booking" class="btn">BOOK NOW</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3 class="heading3">TRANSPORT SHUTTLE</h3>
+          <div class="box-img">
+            <img src="images/service-pic2.jpeg" alt="" />
+          </div>
+          <p>
+            As a worker with a disability, you are legitimately looking for
+            adapted transport to carry out all your business trips.
+          </p>
+          <div class="btn-container">
+            <a href="#booking" class="btn">BOOK NOW</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3 class="heading3">PROFESSIONAL TRANSPORT</h3>
+          <div class="box-img">
+            <img src="images/service-pic3.jpeg" alt="" />
+          </div>
+          <p>
+            As a worker with a disability, you are legitimately looking for
+            adapted transport to carry out all your business trips.
+          </p>
+          <div class="btn-container">
+            <a href="#booking" class="btn">BOOK NOW</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3 class="heading3">SCHOOL TRANSPORT</h3>
+          <div class="box-img">
+            <img src="images/service-pic4.jpeg" alt="" />
+          </div>
+          <p>
+            As a worker with a disability, you are legitimately looking for
+            adapted transport to carry out all your business trips.
+          </p>
+          <div class="btn-container">
+            <a href="#booking" class="btn">BOOK NOW</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------Our Vehicles---------------------------->
+    <section class="vehicles" id="vehicles">
+      <div class="heading">
+        <h1>Our Vehicles</h1>
+      </div>
+
+      <div class="vehicles-container">
+        <div class="box">
+          <h3 class="heading3">CADDY MAXI (Car)</h3>
+          <div class="box-img">
+            <img src="images/vehicle1.png" alt="" />
+          </div>
+          <h4>Vehicle Details</h4>
+          <p><span class="bold">Model:</span> CADDY MAXI (Car)</p>
+          <p><span class="bold">Wheelchair:</span> Yes</p>
+          <p>
+            <span class="bold">Configuration 1:</span> 4
+            <i class="material-icons icon">airline_seat_recline_extra</i> 12
+            <i class="material-icons icon">pets</i> 12
+          </p>
+          <p>
+            <span class="bold">Configuration 2:</span> 4
+            <i class="material-icons icon">airline_seat_recline_extra</i> 12
+            <i class="material-icons icon">pets</i> 12
+          </p>
+        </div>
+
+        <div class="box">
+          <h3 class="heading3">PEUGEOT EXPERT (VAN)</h3>
+          <div class="box-img">
+            <img src="images/vehicle2.png" alt="" />
+          </div>
+          <h4>Vehicle Details</h4>
+          <p><span class="bold">Model:</span> PEUGEOT EXPERT (VAN)</p>
+          <p><span class="bold">Wheelchair:</span> Yes</p>
+          <p>
+            <span class="bold">Configuration 1:</span> 4
+            <i class="material-icons icon">airline_seat_recline_extra</i> 12
+            <i class="material-icons icon">pets</i> 12
+          </p>
+          <p>
+            <span class="bold">Configuration 2:</span> 4
+            <i class="material-icons icon">airline_seat_recline_extra</i> 12
+            <i class="material-icons icon">pets</i> 12
+          </p>
+        </div>
+
+        <div class="box">
+          <h3 class="heading3">FLAT DUCATO (MINIBUS)</h3>
+          <div class="box-img">
+            <img src="images/vehicle3.png" alt="" />
+          </div>
+          <h4>Vehicle Details</h4>
+          <p><span class="bold">Model:</span> FLAT DUCATO</p>
+          <p><span class="bold">Wheelchair:</span> Yes</p>
+          <p>
+            <span class="bold">Configuration 1:</span> 4
+            <i class="material-icons icon">airline_seat_recline_extra</i> 12
+            <i class="material-icons icon">pets</i> 12
+          </p>
+          <p>
+            <span class="bold">Configuration 2:</span> 4
+            <i class="material-icons icon">airline_seat_recline_extra</i> 12
+            <i class="material-icons icon">pets</i> 12
+          </p>
+        </div>
+      </div>
+      <div class="btn-container">
+        <a href="#booking" class="btn">BOOK NOW</a>
+      </div>
+    </section>
+
+    <!---------------------Hauffer------------------------>
+    <section class="hauffer-section" id="drivers">
+      <div class="heading">
+        <h1>Our Hauffers</h1>
+      </div>
+      <div class="hauffer-container">
+        <p>
+          CAB ACCESS is a company specialising in transport people with reduced
+          mobility which offers many services to help you in your daily life.
+          Indeed, with adapted vehicles accessible to wheelchair users, disabled
+          or elderly, they accompany you on your journeys. Whether you have
+          errands to run, a doctor's appointment or appointments professionals,
+          they take care of taking you with you in complete security from one
+          point to another. CAB ACCESS sets a record straightto provide you with
+          a quality service in providing you with trained, qualified drivers and
+          enjoyable.
+        </p>
+        <img src="images/hauffer.png" alt="Hauffer Image" />
+      </div>
+
+      <div class="btn-container">
+        <a href="#booking" class="btn">BOOK NOW</a>
+      </div>
+    </section>
+
+    <!-------------------------Intervention-------------------->
+    <div class="heading1" id="areas">
+      <h1>AREAS OF INTERVENTION</h1>
+    </div>
+
+    <section class="map-section">
+      <div class="map-container">
+        <p>
+          We operate throughout the Paris region and the routes to to or from
+          the Paris region to any other region of France.
+        </p>
+        <img src="images/map.png" alt="map Image" />
+      </div>
+
+      <div class="mobileapp">
+        <h3>Download our mobile app</h3>
+        <img src="images/android-app.png" alt="Hauffer Image" />
+        <img src="images/ios-app.png" alt="Hauffer Image" />
+      </div>
+    </section>
+
+    <!---------------------------Reviews------------------------------->
+    <section class="reviews" id="reviews">
+      <div class="heading">
+        <h1>Our Testinomials</h1>
+      </div>
+
+      <div class="reviews-container">
+        <div class="box">
+          <div class="rev-img">
+            <img src="/images/rev1.png" />
+          </div>
+          <h2>David</h2>
+          <div class="stars">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <p>
+            Very good service, comfortable car, driver pleasant.... I recommend
+          </p>
+        </div>
+
+        <div class="box">
+          <div class="rev-img">
+            <img src="/images/rev2.png" />
+          </div>
+          <h2>Sara</h2>
+          <div class="stars">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <p>
+            Very good service, comfortable car, driver pleasant.... I recommend
+          </p>
+        </div>
+
+        <div class="box">
+          <div class="rev-img">
+            <img src="/images/rev1.png" />
+          </div>
+          <h2>John</h2>
+          <div class="stars">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <p>
+            Very good service, comfortable car, driver pleasant.... I recommend
+          </p>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <a href="#booking" class="btn">BOOK NOW</a>
+      </div>
+    </section>
+
+    <!--------------FAQ--------------->
+    <section class="faq-section" id="FAQ">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <h3 class="faq-question">
+            What are your service hours?<i class="bx bx-chevron-down"></i>
+          </h3>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>
+                Nos Tarifs sont calculés en fonction du type de transport
+                sollicité, la technicité des intervenants, les plages
+                horaires.N'hésitez pas à demander un devis personnalisé en Ligne
+                ou par Téléphone (c'est Gratuit et ça ne vous engage à rien).
+                Nos Tarifs sont Dégressifs selon le volume de trajets
+                commandé.n'hésitez pas à nous consulter pour un devis
+                personnalisé
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">
+            What are your service hours?<i class="bx bx-chevron-down"></i>
+          </h3>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>
+                le prix des péages et du parking sont à la charge du client, ou
+                il peut être rajouté en supplément au prix du trajet à la
+                demande du client. tout PMR supplémentaire sera facturé au prix
+                d'une prise en charge supplémentaire à la demande du client un
+                siége bébé peut être installé dans le véhicule et sera facturé à
+                5 euros TTC/siége bébé. tout animal de companie (en dehors de
+                chien guide pour aveugle) est facturé à 10 euros TTC/animal de
+                companie
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">
+            What are your service hours?<i class="bx bx-chevron-down"></i>
+          </h3>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>
+                Conformément aux dispositions de la loi en vigueur, une
+                majoration des prix est appliquée: elle est de 20% pour les
+                trajets de nuit, et un supplément de 50 euros TTC pour les
+                trajets du dimanche et des jours fériés, et de 100% pour les
+                trajets du 1er mai. Quels sont vos engagements en termes de
+                véhicules et chauffeurs ? tous nos véhicules sont aménagés pour
+                personne à mobilité réduite,et accessibles pour les personnes en
+                fauteuil roulant.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">
+            What are your service hours?<i class="bx bx-chevron-down"></i>
+          </h3>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>
+                Nos prix sont un gage de qualité, parce que vous avez le droit
+                d'être éxigeant. tous nos intervenants sont payés correctement,
+                on a adopte une charte de qualité car notre objectif est
+                toujours mieux vous servir, n'attendez plus, confiez-vous au
+                professionnel du transport de personnes à mobilité réduite.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">
+            What are your service hours?<i class="bx bx-chevron-down"></i>
+          </h3>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>
+                Nos Tarifs sont Clairs et Nets (aucun Frais suplémentaire,aucune
+                adhésion,ou frais de dossier,Un budget maitrisé (vous connaissez
+                à l'avance le prix des préstations commandées).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-container">
+        <a href="#booking" class="btn">BOOK NOW</a>
+      </div>
+    </section>
+
+    <!-----------------------PAYMENT METHODS----------------------->
+    <section class="payment-section">
+      <h2>PAYMENT METHODS</h2>
+      <div class="payment-container">
+        <div class="payment-item">
+          <h4>Species</h4>
+          <img src="/images/species.png" alt="Species" />
+        </div>
+        <div class="payment-item">
+          <h4>Bank Card</h4>
+          <img src="/images/bankcard.png" alt="Bank Card" />
+        </div>
+        <div class="payment-item">
+          <h4>Cheque</h4>
+          <img src="/images/cheque.png" alt="Cheque" />
+        </div>
+        <div class="payment-item">
+          <h4>Wire Transfer</h4>
+          <img src="/images/wiretransfer.png" alt="Wire Transfer" />
+        </div>
+        <div class="payment-item">
+          <h4>Debit</h4>
+          <img src="/images/debit.png" alt="Debit" />
+        </div>
+      </div>
+    </section>
+
+    <!----------------------SPONSORS----------------->
+
+    <div class="sponsorslider">
+      <h2>Our Sponsors</h2>
+
+      <div class="logo-slide">
+        <img src="images/logo1.jpeg" alt="sponsor" />
+        <img src="images/logo2.jpeg" alt="sponsor" />
+        <img src="images/logo3.jpeg" alt="sponsor" />
+        <img src="images/logo4.jpeg" alt="sponsor" />
+        <img src="images/logo5.jpeg" alt="sponsor" />
+      </div>
+      <div class="logo-slide">
+        <img src="images/logo1.jpeg" alt="sponsor" />
+        <img src="images/logo2.jpeg" alt="sponsor" />
+        <img src="images/logo3.jpeg" alt="sponsor" />
+        <img src="images/logo4.jpeg" alt="sponsor" />
+        <img src="images/logo5.jpeg" alt="sponsor" />
+      </div>
+    </div>
+
+    <!-------------------FOOTER-------------------->
+    <section class="footer" id="footer">
+      <div class="footer-box-container">
+        <div class="box">
+          <img src="images/ecablogo.png" />
+          <div class="copyright">
+            copyright &copy; 2022 | all rights reserved
+          </div>
+          <p>Address: 40 Rue Alexandre</p>
+          <p>Dumas 75011 Paris</p>
+          <a href="#"><i class="bx bx-envelope"> contact@handio.fr</i></a>
+          <a href="#"><i class="bx bx-phone"> 0183628404</i></a>
+        </div>
+
+        <div class="box">
+          <h3>SERVICES</h3>
+          <a href="#"
+            ><i class="bx bx-right-arrow-alt">PRIVATE TRANSPORTATION</i></a
+          >
+          <a href="#"><i class="bx bx-right-arrow-alt">TRANSPORT SHUTTLE</i></a>
+          <a href="#"
+            ><i class="bx bx-right-arrow-alt">PROFESSIONAL TRANSPORT</i></a
+          >
+          <a href="#"><i class="bx bx-right-arrow-alt">SCHOOL TRANSPORT</i></a>
+        </div>
+
+        <div class="box">
+          <h3>NEWS</h3>
+          <a href="#"><i class="bx bx-right-arrow-alt">RESERVATION</i></a>
+          <a href="#"><i class="bx bx-right-arrow-alt">SERVICES</i></a>
+          <a href="#"><i class="bx bx-right-arrow-alt">PARK</i></a>
+          <a href="#"><i class="bx bx-right-arrow-alt">AREAS</i></a>
+          <a href="#"><i class="bx bx-right-arrow-alt">TESTIMONIALS</i></a>
+          <a href="#"><i class="bx bx-right-arrow-alt">FAQ</i></a>
+        </div>
+
+        <div class="box">
+          <h3>USEFUL LINKS</h3>
+          <a href="#"><i class="bx bx-right-arrow-alt">CONNECTION</i></a>
+          <a href="#"><i class="bx bx-right-arrow-alt">CHECK IN</i></a>
+          <a href="#"><i class="bx bx-right-arrow-alt">CONTACT</i></a>
+        </div>
+
+        <div class="box">
+          <h3>SECTIONS</h3>
+          <a href="#"><i class="bx bx-right-arrow-alt">DRIVER</i></a>
+          <a href="#"><i class="bx bx-right-arrow-alt">EMPLOYMENT</i></a>
+          <a href="#"><i class="bx bx-right-arrow-alt">PARTNER</i></a>
+          <a href="#"><i class="bx bx-right-arrow-alt">AFFILIATED</i></a>
+          <a href="#"><i class="bx bx-right-arrow-alt">CUSTOMER</i></a>
+        </div>
+      </div>
+    </section>
+
+    <!--Link to JS-->
+    <script src="script.js"></script>
+  </body>
+</html>
